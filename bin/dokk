@@ -1,3 +1,7 @@
 #!/bin/bash
 echo === boom ===
 echo ARGS="$@"
+echo ------ BODY -----------
+body=$(cat)
+echo $body | jq .Name
+echo $body | jq .NetworkSettings.IPAddress
