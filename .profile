@@ -1,4 +1,4 @@
-export PATH=$BASH_SOURCE/bin:$PATH
+export PATH=$(dirname $BASH_SOURCE)/bin:$PATH
 export PLUGIN_PATH=$(dirname $BASH_SOURCE)/plugins
 
 BRIDGE_IP=$(docker run --rm busybox ip ro | grep default | cut -d" " -f 3)
