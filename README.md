@@ -24,7 +24,7 @@ can override it with the `--rpc-addr=<HOST>:<PORT>` option. So the first command
 to check the membership:
 
 ```
-consul members --rpc-addr=$BRIDGE_IP
+consul members --rpc-addr=$BRIDGE_IP:8400
 ```
 
 In the profile there is a function to do it:
